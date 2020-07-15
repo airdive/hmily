@@ -10,7 +10,7 @@ spring:
         allow-bean-definition-overriding: true
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.3.64:3306/tcc-order?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&failOverReadOnly=false&autoReconnect=true
+        url: jdbc:mysql://192.168.3.64:3306/tcc_order?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&failOverReadOnly=false&autoReconnect=true
         username: root
         password: orvibo888
     application:
