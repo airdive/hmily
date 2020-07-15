@@ -24,6 +24,7 @@ import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfigurat
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 /**
@@ -31,7 +32,7 @@ import org.springframework.context.annotation.ImportResource;
  *
  * @author xiaoyu
  */
-@SpringBootApplication(exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"org.dromara.hmily.*"}, exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 @EnableEurekaClient
 @EnableFeignClients
 @ImportResource({"classpath:applicationContext.xml"})
